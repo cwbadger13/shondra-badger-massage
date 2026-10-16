@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shondra Badger Massage Therapy | Mt. Pleasant, NC</title>
+<meta name="description" content="Licensed massage therapist in Mt. Pleasant, NC with nearly 14 years of experience. Deep tissue, sports massage, Swedish, neuromuscular therapy, cupping and gua sha. Call (704) 962-5908.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sage: #6f8f74;
+    --sage-dark: #4f6b54;
+    --sage-light: #e9f0e6;
+    --cream: #faf7f0;
+    --stone: #2e3a30;
+    --muted: #5d6b5f;
+    --gold: #b89b5e;
+    --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--stone);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.2; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250, 247, 240, 0.96);
+    border-bottom: 1px solid #e5ddcc;
+    backdrop-filter: blur(6px);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; max-width: 1100px; margin: 0 auto; }
+  .brand { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--sage-dark); text-decoration: none; }
+  .brand small { display: block; font-family: 'Jost', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+  .nav-links { display: flex; gap: 26px; align-items: center; }
+  .nav-links a { text-decoration: none; color: var(--stone); font-size: 15px; letter-spacing: 1px; }
+  .nav-links a:hover { color: var(--sage-dark); }
+  .btn {
+    display: inline-block; background: var(--sage-dark); color: var(--white);
+    padding: 12px 28px; border-radius: 40px; text-decoration: none;
+    font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500;
+    transition: background 0.25s;
+  }
+  .btn:hover { background: var(--sage); }
+  .btn-outline { background: transparent; border: 1.5px solid var(--sage-dark); color: var(--sage-dark); }
+  .btn-outline:hover { background: var(--sage-dark); color: var(--white); }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #dce8d8 0%, #eef3e6 45%, #f7f2e7 100%);
+    padding: 100px 24px 90px; text-align: center; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; top: -120px; right: -120px; width: 420px; height: 420px;
+    background: radial-gradient(circle, rgba(111,143,116,0.18) 0%, transparent 70%); border-radius: 50%;
+  }
+  .hero::after {
+    content: ""; position: absolute; bottom: -140px; left: -100px; width: 380px; height: 380px;
+    background: radial-gradient(circle, rgba(184,155,94,0.14) 0%, transparent 70%); border-radius: 50%;
+  }
+  .hero .kicker { letter-spacing: 4px; text-transform: uppercase; font-size: 13px; color: var(--sage-dark); margin-bottom: 18px; font-weight: 500; }
+  .hero h1 { font-size: clamp(44px, 7vw, 76px); color: var(--stone); margin-bottom: 16px; }
+  .hero h1 em { font-style: italic; color: var(--sage-dark); }
+  .hero p.lead { font-size: 19px; color: var(--muted); max-width: 640px; margin: 0 auto 34px; }
+  .hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+  .stars { color: var(--gold); letter-spacing: 4px; font-size: 18px; margin-bottom: 6px; }
+  .rating-note { font-size: 14px; color: var(--muted); margin-top: 26px; }
+
+  /* Sections */
+  section { padding: 84px 0; }
+  .sec-head { text-align: center; margin-bottom: 52px; }
+  .sec-head .kicker { letter-spacing: 4px; text-transform: uppercase; font-size: 13px; color: var(--sage-dark); margin-bottom: 12px; font-weight: 500; }
+  .sec-head h2 { font-size: clamp(32px, 4.5vw, 48px); color: var(--stone); }
+  .sec-head p { color: var(--muted); max-width: 620px; margin: 14px auto 0; font-size: 17px; }
+
+  /* Services */
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .card {
+    background: var(--white); border-radius: 18px; padding: 36px 30px;
+    box-shadow: 0 6px 24px rgba(79, 107, 84, 0.08);
+    border-top: 3px solid var(--sage);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .card:hover { transform: translateY(-5px); box-shadow: 0 12px 32px rgba(79, 107, 84, 0.14); }
+  .card .icon { font-size: 34px; margin-bottom: 14px; }
+  .card h3 { font-size: 26px; margin-bottom: 10px; color: var(--stone); }
+  .card p { color: var(--muted); font-size: 16px; }
+
+  /* About */
+  .about { background: var(--sage-light); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+  @media (max-width: 800px) { .about-grid { grid-template-columns: 1fr; } }
+  .about h2 { font-size: clamp(32px, 4.5vw, 46px); margin-bottom: 18px; }
+  .about p { color: var(--muted); font-size: 17px; margin-bottom: 16px; }
+  .creds { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .cred {
+    background: var(--white); border: 1px solid #d8e2d2; border-radius: 30px;
+    padding: 9px 20px; font-size: 14px; color: var(--sage-dark); font-weight: 500; letter-spacing: 0.5px;
+  }
+  .about-photo {
+    background: linear-gradient(150deg, var(--sage) 0%, var(--sage-dark) 100%);
+    border-radius: 22px; min-height: 420px; display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.9); font-family: 'Cormorant Garamond', serif; font-size: 30px; font-style: italic;
+    text-align: center; padding: 40px; box-shadow: 0 12px 40px rgba(79, 107, 84, 0.25);
+  }
+
+  /* Reviews */
+  .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .review {
+    background: var(--white); border-radius: 18px; padding: 32px 28px;
+    box-shadow: 0 6px 24px rgba(79, 107, 84, 0.08); position: relative;
+  }
+  .review .quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 54px; color: var(--sage); line-height: 1; margin-bottom: 4px; }
+  .review p { font-size: 16.5px; color: var(--stone); font-style: italic; margin-bottom: 14px; }
+  .review .stars { font-size: 15px; margin-bottom: 2px; }
+
+  /* Visit */
+  .visit { background: var(--stone); color: #e9e4d6; }
+  .visit .sec-head h2 { color: var(--white); }
+  .visit .sec-head p { color: #b9b3a2; }
+  .visit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 8px; }
+  .visit-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 30px 26px; }
+  .visit-card h3 { color: var(--gold); font-size: 24px; margin-bottom: 12px; }
+  .visit-card p, .visit-card a { color: #e9e4d6; font-size: 16px; text-decoration: none; }
+  .visit-card a:hover { color: var(--gold); }
+  .hours-row { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px dotted rgba(255,255,255,0.15); font-size: 15.5px; }
+  .visit-cta { text-align: center; margin-top: 44px; }
+  .visit-cta .btn { background: var(--gold); }
+  .visit-cta .btn:hover { background: #a0874e; }
+
+  /* Footer */
+  footer { background: #232b24; color: #8f988f; text-align: center; padding: 34px 24px; font-size: 14px; }
+  footer a { color: #b9b3a2; text-decoration: none; }
+  footer a:hover { color: var(--gold); }
+
+  @media (max-width: 640px) {
+    .nav-links a:not(.btn) { display: none; }
+    section { padding: 60px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="#top">Shondra Badger<small>Massage Therapy</small></a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+      <a class="btn" href="tel:+17049625908">Book Now</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap" style="position:relative; z-index:1;">
+    <div class="kicker">Mt. Pleasant, North Carolina</div>
+    <h1>Relief that <em>lasts.</em></h1>
+    <p class="lead">Licensed massage therapy with nearly 14 years of experience — deep tissue, sports massage, and therapeutic bodywork tailored to what your body actually needs.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="tel:+17049625908">Call (704) 962-5908</a>
+      <a class="btn btn-outline" href="#services">Explore Services</a>
+    </div>
+    <div class="rating-note">
+      <div class="stars">★★★★★</div>
+      5.0-star rated by local clients
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Services</div>
+      <h2>Bodywork for how you live</h2>
+      <p>Every session is customized — tell Shondra what's hurting, and she'll build the right combination of techniques around it.</p>
+    </div>
+    <div class="services">
+      <div class="card">
+        <div class="icon">💪</div>
+        <h3>Deep Tissue Massage</h3>
+        <p>Focused, firm pressure that works through chronic tension and knots in the deeper muscle layers. Shondra's signature specialty — the reason most clients first walk in.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏃</div>
+        <h3>Sports Massage</h3>
+        <p>Targeted work for active bodies — pre-event prep, post-workout recovery, and maintenance for the muscles you depend on most.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🌿</div>
+        <h3>Swedish Massage</h3>
+        <p>Long, flowing strokes that melt away everyday stress, improve circulation, and leave you deeply relaxed from head to toe.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Neuromuscular Therapy</h3>
+        <p>Clinical, precise treatment for pain patterns, trigger points, and injuries — addressing the source of the problem, not just the symptoms.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⭕</div>
+        <h3>Cupping Therapy</h3>
+        <p>Suction cups lift and separate tissue to increase blood flow, release stubborn tightness, and speed recovery in problem areas.</p>
+      </div>
+      <div class="card">
+        <div class="icon">✨</div>
+        <h3>Gua Sha</h3>
+        <p>A traditional scraping technique that breaks up stagnation and eases muscle pain — one of Shondra's specialties, blended seamlessly into your session.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="sec-head" style="text-align:left; margin-bottom: 24px;">
+          <div class="kicker">Meet Your Therapist</div>
+          <h2>Shondra Badger, LMBT</h2>
+        </div>
+        <p>Shondra has been a licensed massage and bodywork therapist for nearly 14 years. She specializes in deep tissue and gua sha, and her clients stay with her for years — because the relief lasts.</p>
+        <p>She trained at the Southeastern Institute in Charlotte, graduating in 2011, and holds a Bachelor of Science in Psychology from Penn State University — an understanding of the mind-body connection she brings into every session. She is licensed and fully insured in North Carolina.</p>
+        <div class="creds">
+          <span class="cred">NC License #11513</span>
+          <span class="cred">Licensed &amp; Insured</span>
+          <span class="cred">~14 Years Experience</span>
+          <span class="cred">Deep Tissue Specialist</span>
+        </div>
+      </div>
+      <div class="about-photo">
+        "The best deep tissue massage around."
+        <br><span style="font-size:18px; font-family:'Jost',sans-serif; font-style:normal;">— a long-term client</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Client Reviews</div>
+      <h2>Five stars, earned one session at a time</h2>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="quote-mark">&ldquo;</div>
+        <p>Shondra does a great deep tissue massage. Best around!</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review">
+        <div class="quote-mark">&ldquo;</div>
+        <p>Shondra is wonderful, knowledgeable and has helped me with my back, shoulders and legs! Highly recommended!</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review">
+        <div class="quote-mark">&ldquo;</div>
+        <p>The atmosphere was calming, and I immediately felt at ease. I left feeling rejuvenated, with a noticeable reduction in tension and stress.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker" style="color: var(--gold);">Visit</div>
+      <h2>Book your session</h2>
+      <p>Call or text to schedule — flexible appointments to fit your week.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Location</h3>
+        <p>8325 W Franklin St<br>Mt. Pleasant, NC 28124</p>
+      </div>
+      <div class="visit-card">
+        <h3>Hours</h3>
+        <div class="hours-row"><span>Monday – Friday</span><span>9 AM – 6 PM</span></div>
+        <div class="hours-row"><span>Saturday</span><span>Closed</span></div>
+        <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+      </div>
+      <div class="visit-card">
+        <h3>Contact</h3>
+        <p><a href="tel:+17049625908">(704) 962-5908</a></p>
+        <p style="margin-top:8px;"><a href="https://www.facebook.com/240031919515078/" target="_blank" rel="noopener">Facebook Page</a></p>
+      </div>
+    </div>
+    <div class="visit-cta">
+      <a class="btn" href="tel:+17049625908">Call to Book — (704) 962-5908</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Shondra Badger Massage Therapy · Mt. Pleasant, NC · NC LMBT #11513</p>
+  <p style="margin-top:6px;"><a href="https://www.facebook.com/240031919515078/" target="_blank" rel="noopener">Facebook</a></p>
+</footer>
+
+</body>
+</html>
